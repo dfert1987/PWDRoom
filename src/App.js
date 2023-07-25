@@ -6,11 +6,13 @@ import ForgotPassword from './pages/ForgotPassword';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import UserProfile from './pages/UserProfile';
+import Header from './components/Header';
 
 function App() {
     return (
         <>
             <Router>
+                <Header />
                 <Routes>
                     <Route exact path='/' element={<Home />} />
                     <Route path='/user-profile' element={<UserProfile />} />
